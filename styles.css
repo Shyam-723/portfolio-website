@@ -45,11 +45,12 @@ body {
 }
 
 .body-content .body-image {
-    width: 100%;
-    max-width: 75%;
+    max-width: 25%;
     height: auto;
     display: block;
     margin: 0 auto;
+    margin-top: 1em;
+    float: left;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
