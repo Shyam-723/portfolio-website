@@ -26,6 +26,7 @@ body {
 
 .header a.logo .logo-container {
     display: inline-block;
+    padding: 0em; 
 }
 
 /* Change the background color on mouse-over */
