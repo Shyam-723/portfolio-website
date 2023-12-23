@@ -41,7 +41,7 @@ body {
 }
 
 .body-content {
-    text-align: left;
+    
     padding: 1.25em;
 }
 
@@ -53,6 +53,39 @@ body {
     margin-top: 1em;
     float: left;
 }
+
+.body-content .body-text-box {
+    background: rgb(237, 204, 204);
+    width: 60%;
+    max-width: 400px;
+    height: 70%;
+    max-height: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 400px rgba(231, 230, 157, 0.5), 0 0 60px rgba(225, 223, 114, 0.5); /* Two layers of shadow with a Chromostereopsis effect */
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    transition: box-shadow 0.3s ease-in-out;
+    border: 5px solid transparent; 
+    border-image: linear-gradient(45deg, #ff4e50, #fcff7e); 
+    border-image-slice: 1;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    text-align: inherit;
+}
+
+.body-content .body-text-box:hover {
+    box-shadow: 0 0 40px rgba(77, 0, 153, 0.8), 0 0 60px rgba(204, 0, 255, 0.8); /* Adjust shadow on hover */
+}
+
+.body-content .body-text-box p {
+    margin: 0;
+}
+
+
+
+
+
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
