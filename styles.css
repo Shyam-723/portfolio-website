@@ -6,16 +6,29 @@ body {
 
 .header {
     overflow: hidden;
-    background-color: #9BC59D;
-    padding: 1em 0.625em; 
+    padding: 1em 0.625em;
     text-align: center;
     max-height: 4em;
+    background: linear-gradient(to right, #241d43, #214747); /* Initial gradient background */
+    background-size: 200% 100%; /* Initial size of the background gradient */
+    animation: headerFade 10s infinite alternate;
 }
+
+@keyframes headerFade {
+    0% {
+        background-position: 0 0; /* Start position of the gradient background */
+    }
+    100% {
+        background-position: 100% 0; /* End position of the gradient background */
+    }
+}
+
+
 
 /* Style the header links */
 .header a {
     float: left;
-    color: black;
+    color: rgba(255, 255, 255, 0.659);
     text-align: center;
     padding: 0.75em;
     text-decoration: none;
