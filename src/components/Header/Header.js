@@ -12,8 +12,8 @@ function Header() {
             </a>
             <div className="header-right">
                 <a className="active" href="#Home">Home</a>
-                <a href="#About">About</a>
-                //<a href="#Contact">Contact</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
             </div>
         </div>
     );
