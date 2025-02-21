@@ -16,7 +16,7 @@
 
 body {
     margin: 0;
-    background-color: #33658A;
+    background-color: #1e2429;
     text-align: center;
 }
 
@@ -34,8 +34,25 @@ body {
     float: left;
 }
 
-.body-text {
+.body-content .scrolling-section .loading-image img {
+    max-width: 80%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    animation: TextFade 2s linear;
 }
+
+
+.scrolling-section {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    height: auto; 
+    flex-direction: row;
+}
+
+
 
 .space{
     height: 10em;

@@ -1,12 +1,20 @@
 .header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     overflow: hidden;
     padding: 1em 0.625em;
     text-align: center;
     max-height: 4em;
-    background: linear-gradient(to right, #241d43, royalblue); /* Initial gradient background */
-    background-size: 200% 100%; /* Initial size of the background gradient */
+    background: linear-gradient(to right, #241d43, rgb(83, 116, 213));
+    background-size: 400% 100%;
+    background-attachment: fixed; /* Ensures smooth gradient movement */
     animation: headerFade 10s infinite alternate;
+    display: flex;
+    flex-direction: row;
 }
+
 
 @keyframes headerFade {
     0% {
@@ -19,7 +27,11 @@
 
 /* Float the link section to the right */
 .header-right {
-    float: right;
+    margin-left: auto;
+}
+
+.header-right a:hover{
+    color:antiquewhite;
 }
 
 /* Style the links in the header */

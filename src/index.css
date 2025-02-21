@@ -1,12 +1,10 @@
-body {
-  margin: 0;
-  background-color: #33658A;
-  text-align: center;
+html {
+    scroll-behavior: smooth;
 }
 
-text {
-  color: white;
-  font-size: 30px;
+body {
+  overflow-x: hidden; 
+  width: 100%;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
