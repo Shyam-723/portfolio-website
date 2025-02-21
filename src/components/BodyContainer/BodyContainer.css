@@ -1,0 +1,42 @@
+.animation-text{
+    font-family: '8-Bit Operator JVE', Papyrus;
+    font-size: 30px;
+    color: white;
+    animation: TextFade 2s linear;
+}
+
+@keyframes TextFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    background-color: #33658A;
+    text-align: center;
+}
+
+.body-content {
+    padding: 1.25em;
+    flex-direction: column;
+}
+
+.body-content .body-image {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    float: left;
+}
+
+.body-text {
+}
+
+.space{
+    height: 10em;
+}
