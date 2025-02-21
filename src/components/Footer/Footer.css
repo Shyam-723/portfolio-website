@@ -1,0 +1,18 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    padding: 0.8em;
+    background-image: linear-gradient(to right, cornflowerblue, royalblue);
+}
+
+.footer-images {
+    float: right;
+}
+
+.footer-images img {
+    padding-right: 40px;
+}
+
