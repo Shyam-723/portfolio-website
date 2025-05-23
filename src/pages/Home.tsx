@@ -48,10 +48,9 @@ const Home = () => {
         <ParallaxSection>
           <div className="h-full flex items-center justify-center text-white">
             <div className="max-w-2xl text-center">
-              <h2 className="text-4xl font-bold mb-4">Passionate About Creating</h2>
+              <h2 className="text-4xl font-bold mb-4">Gotta put something here that ideally lines up with the above Section (._.)</h2>
               <p className="text-xl opacity-90">
-                I'm dedicated to building exceptional digital experiences that combine
-                beautiful design with powerful functionality.
+                I'm thinking like some Undertale thingy idk
               </p>
             </div>
           </div>

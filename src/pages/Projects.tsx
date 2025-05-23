@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 const Projects = () => {
   useEffect(() => {
-    document.title = 'Projects | Your Name';
+    document.title = 'Projects | Shyam Gupta';
   }, []);
   
   return (

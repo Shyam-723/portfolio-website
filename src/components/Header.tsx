@@ -23,7 +23,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-primary-700">
-          YourName
+          Shyam's Website
         </Link>
         
         <nav className="hidden md:flex space-x-8">

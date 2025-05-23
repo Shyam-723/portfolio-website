@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
   return (
@@ -10,7 +11,7 @@ const Welcome = () => {
       />
       
       <div 
-        className="absolute inset-0 bg-[url('https://images.pexels.com/photos/416676/pexels-photo-416676.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center"
         style={{ 
           transform: 'translateZ(-10px) scale(2)',
           zIndex: 0 
@@ -24,9 +25,18 @@ const Welcome = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           className="text-white"
         >
-          <h1 className="font-bold mb-6">Welcome to My Website</h1>
+          <h1 className="font-bold mb-6">Welcome to My Website!</h1>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            I'm a passionate developer creating beautiful and functional web experiences.
+            I'm a full-stack developer branching into AI/ML in Computer Vision!
+          </p>
+          <p> 
+            {/* Spaces are needed to seperate the link text */}
+            Scroll down to learn more about me, or click {' '}
+            <Link
+            to="/projects">
+            <b>here</b>
+            </Link>
+            {' '}to see some of my projects!
           </p>
           
           <motion.div

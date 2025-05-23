@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 const Contact = () => {
   useEffect(() => {
-    document.title = 'Contact | Your Name';
+    document.title = 'Contact | Shyam Gupta';
   }, []);
   
   return (

@@ -1,19 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import ProfessionalPhoto from '../images/Professional_Photo.jpeg';
+import HackathonPhoto from '../images/ExoSky.jpeg'
 
 interface ContentBlockProps {
   title: string;
-  description: string;
+  description: React.ReactNode; /* Needed to render JSX elements - Should I just make them all this?*/
   imageUrl: string;
   imageAlt: string;
+  imageBlurb: string;
   reversed?: boolean;
 }
 
 const ContentBlock: React.FC<ContentBlockProps> = ({ 
   title, 
   description, 
-  imageUrl, 
+  imageUrl,
+  imageBlurb, 
   imageAlt, 
   reversed = false 
 }) => {
@@ -32,11 +36,14 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
     >
       <div className="flex-1">
         <div className="rounded-lg overflow-hidden shadow-xl h-full">
-          <img 
-            src={imageUrl} 
-            alt={imageAlt}
-            className="w-full h-full object-cover"
-          />
+          <figure> 
+            <img 
+              src={imageUrl} 
+              alt={imageAlt}
+              className="w-full h-full object-cover"
+            />
+            <figcaption>{imageBlurb}</figcaption>
+          </figure>
         </div>
       </div>
       
@@ -71,38 +78,73 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="w-24 h-1 bg-teal-600 mx-auto mb-6"
           />
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="max-w-2xl mx-auto text-gray-600"
-          >
-            Learn more about my journey, skills, and passion for creating amazing web experiences.
-          </motion.p>
         </div>
         
         <div className="space-y-8">
           <ContentBlock 
             title="My Journey"
-            description="I started my journey as a developer with a passion for creating beautiful, functional websites. Over the years, I've honed my skills in various technologies and frameworks, always striving to deliver exceptional user experiences. My background in design and development allows me to approach projects holistically, ensuring both aesthetics and functionality are perfectly balanced."
-            imageUrl="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            imageAlt="Developer journey"
+            description={
+              <>
+                I'm a college student currently obtaining my Bachelor's in Computer Science at UC Merced!<br /><br />
+                Growing up in Texas, I was exposed to the tail end of the 'Dot-Com Boom' and saw the need and potential of Computer Science.<br /><br />
+                <strong>At UC Merced:</strong>
+                <ul>
+                  <li>- I work in our IT Department on the school website</li>
+                  <li>- Work on cutting-edge research with AI in Computer Vision</li>
+                  <li>- Am the Executive Director of HackMerced, a student-run org that hosts a 200-person hackathon</li>
+                  <li>- Work as a consultant at 180 Degrees Consulting</li>
+                </ul>
+              </>
+            }
+            imageUrl={ProfessionalPhoto}
+            imageBlurb=''
+            imageAlt="Journey"
           />
           
           <ContentBlock 
             title="My Skills"
-            description="I specialize in front-end development with expertise in React, TypeScript, and modern CSS frameworks. I'm passionate about creating responsive, accessible web applications with smooth animations and intuitive user interfaces. Additionally, I have experience with back-end technologies and database management, allowing me to develop full-stack applications when needed."
-            imageUrl="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            description={
+              <>
+              I specialize in full-stack development, including but not limited to:
+              <ul>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Modern CSS Frameworks</li>
+                <li>Figma</li>
+                <li>SupaBase & FireBase</li>
+                <li>Docker</li>
+              </ul>
+              
+              I'm currently branching out to AI/ML in Computer Vision. So far, I've worked with:
+              <ul>
+              <li>OpenCV</li>
+              <li>ResNet</li>
+              <li>PyTorch</li>
+              </ul>
+              </>
+            }
+            imageUrl={HackathonPhoto}
+            imageBlurb='Our team winning our local Nasa SpaceApps!'
             imageAlt="Developer skills"
             reversed={true}
           />
           
           <ContentBlock 
-            title="My Approach"
-            description="I believe in a user-centered approach to development, prioritizing accessibility, performance, and intuitive design. Every project begins with understanding the needs of users and stakeholders, followed by thoughtful planning and execution. I'm a firm believer in clean, maintainable code and staying updated with the latest industry standards and best practices."
-            imageUrl="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            imageAlt="Development approach"
+            title="Extracirciulars" /* THis is spelt VERY wrong */
+            description={
+              <>
+                I like to try new things and meet new people! I:
+                <ul>
+                  <li>Play Basketball</li>
+                  <li>Took part in a competetive dance team</li>
+                  <li>Manage a 20 person team that hosts a 200 person hackathon</li>
+                  <li>Hike</li>
+                </ul>
+              </>
+            }
+            imageUrl=""
+            imageBlurb=''
+            imageAlt="Extra-Stuff"
           />
         </div>
       </div>
