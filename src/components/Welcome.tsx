@@ -28,6 +28,7 @@ const Welcome = () => {
           <h1 className="font-bold mb-6">Welcome to My Website!</h1>
           <p className="text-xl max-w-2xl mx-auto mb-8">
             I'm a full-stack developer branching into AI/ML in Computer Vision!
+            Currently this webpage is under development! (._.)
           </p>
           <p> 
             {/* Spaces are needed to seperate the link text */}
