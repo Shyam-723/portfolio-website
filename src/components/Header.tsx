@@ -28,12 +28,6 @@ const Header = () => {
         
         <nav className="hidden md:flex space-x-8">
           <Link 
-            to="/#about" 
-            className="text-gray-800 hover:text-primary-600 transition-colors"
-          >
-            About
-          </Link>
-          <Link 
             to="/projects" 
             className="text-gray-800 hover:text-primary-600 transition-colors"
           >
