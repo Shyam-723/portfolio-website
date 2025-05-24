@@ -49,7 +49,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
       
       <div className="flex-1 flex flex-col justify-center">
         <h3 className="text-2xl font-bold mb-4 text-primary-800">{title}</h3>
-        <p className="text-gray-700 leading-relaxed">
+        <p className="leading-relaxed text-white">
           {description}
         </p>
       </div>
@@ -59,7 +59,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-[#1e1e2f] text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2 
@@ -67,7 +67,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-4xl font-bold text-gray-900 mb-4"
+            className="text-4xl font-bold text-white leading-relaxed mb-4"
           >
             About Me
           </motion.h2>

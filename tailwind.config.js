@@ -33,6 +33,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        pixel: ['"Press Start 2P"', 'monospace'],
       },
       height: {
         '128': '32rem',

@@ -3,11 +3,12 @@ import Header from '../components/Header';
 import Welcome from '../components/Welcome';
 import ParallaxSection from '../components/ParallaxSection';
 import AboutSection from '../components/AboutSection';
+import bgPic from '../images/bg.png';
+import cavePic from '../images/cavernous.png';
 
 const Home = () => {
   useEffect(() => {
-    // Update document title
-    document.title = 'Your Name | Personal Website';
+    document.title = 'Shyam Gupta | Personal Website';
     
     // Smooth scroll behavior for anchor links
     const handleAnchorClick = (e: MouseEvent) => {
@@ -43,20 +44,17 @@ const Home = () => {
       <Header />
       
       <main>
+      <ParallaxSection backgroundImage={bgPic}>
         <Welcome />
-        
-        <ParallaxSection>
-          <div className="h-full flex items-center justify-center text-white">
-            <div className="max-w-2xl text-center">
-              <h2 className="text-4xl font-bold mb-4">Gotta put something here that ideally lines up with the above Section (._.)</h2>
-              <p className="text-xl opacity-90">
-                I'm thinking like some Undertale thingy idk
-              </p>
-            </div>
-          </div>
-        </ParallaxSection>
-        
-        <AboutSection />
+      </ParallaxSection>
+
+      <ParallaxSection backgroundImage={cavePic}>
+        <div className="text-white text-center">
+         
+        </div>
+      </ParallaxSection>
+
+      <AboutSection />
       </main>
     </div>
   );
