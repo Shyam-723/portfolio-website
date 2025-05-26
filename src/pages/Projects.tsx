@@ -12,19 +12,19 @@ const projects: Project[] = [
   {
     title: 'Portfolio Website',
     description: 'A personal website built with React and Tailwind CSS to showcase my work.',
-    tags: ['React', 'Frontend', 'Figma'],
-    link: 'https://github.com/yourname/portfolio-site'
+    tags: ['React', 'Frontend', 'TypeScript', 'Vite', 'Docker'],
+    link: 'https://github.com/Shyam-723/portfolio-website'
   },
   {
     title: 'Image Classifier',
     description: 'A ResNet-based image classification project using PyTorch and OpenCV.',
-    tags: ['AI/ML', 'PyTorch', 'OpenCV'],
+    tags: ['AI/ML', 'PyTorch', 'OpenCV', 'ResNet'],
     link: 'https://github.com/yourname/image-classifier'
   },
   {
-    title: 'Hackathon Platform',
-    description: 'Event platform for hackathons with Docker-based deployment.',
-    tags: ['Docker', 'Node.js', 'Fullstack'],
+    title: 'HackMerced',
+    description: 'Event platform for hackathons with Firebase backend.',
+    tags: ['Node.js', 'Fullstack', 'FireBase'],
     link: 'https://github.com/yourname/hackathon-platform'
   },
   // Add more projects here...
