@@ -17,6 +17,7 @@ const Contact = () => {
           <div className="text-center">
             <p className="text-xl text-gray-600">
               This page is coming soon. Check back later to connect with me!
+              In the meantime, head over to me LinkedIn Page to Connect!
             </p>
           </div>
         </div>
