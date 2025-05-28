@@ -19,13 +19,13 @@ const projects: Project[] = [
     title: 'Image Classifier',
     description: 'A ResNet-based image classification project using PyTorch and OpenCV.',
     tags: ['AI/ML', 'PyTorch', 'OpenCV', 'ResNet'],
-    link: 'https://github.com/yourname/image-classifier'
+    link: 'https://github.com/Shyam-723/SpotIt_Model'
   },
   {
     title: 'HackMerced',
     description: 'Event platform for hackathons with Firebase backend.',
     tags: ['Node.js', 'Fullstack', 'FireBase'],
-    link: 'https://github.com/yourname/hackathon-platform'
+    link: 'https://github.com/HackMerced/HackMerced-XI'
   },
   // Add more projects here...
 ];
