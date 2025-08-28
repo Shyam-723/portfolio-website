@@ -3,8 +3,6 @@ import Header from '../components/Header';
 import Welcome from '../components/Welcome';
 import ParallaxSection from '../components/ParallaxSection';
 import AboutSection from '../components/AboutSection';
-import bgPic from '../images/bg.png';
-import cavePic from '../images/cavernous.png';
 
 const Home = () => {
   useEffect(() => {
@@ -44,14 +42,8 @@ const Home = () => {
       <Header />
       
       <main>
-      <ParallaxSection backgroundImage={bgPic}>
+      <ParallaxSection >
         <Welcome />
-      </ParallaxSection>
-
-      <ParallaxSection backgroundImage={cavePic}>
-        <div className="text-white text-center">
-         
-        </div>
       </ParallaxSection>
 
       <AboutSection />

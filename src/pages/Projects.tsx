@@ -27,6 +27,18 @@ const projects: Project[] = [
     tags: ['Node.js', 'Fullstack', 'FireBase'],
     link: 'https://github.com/HackMerced/HackMerced-XI'
   },
+  {
+    title: 'AI Face Mask Detection',
+    description: 'A face mask detection system using YOLO.',
+    tags: ['AI/ML', 'YOLO', 'OpenCV'],
+    link: 'https://github.com/Shyam-723/face-mask-detector'
+  },
+  {
+    title: 'AI CCTV People Detection',
+    description: 'ImageNet trained model for people detection in CCTV footage using Roboflow annotation',
+    tags: ['AI/ML', 'YOLO', 'OpenCV'],
+    link: 'https://github.com/Shyam-723/people-detector-yolo'
+  },
   // Add more projects here...
 ];
 
