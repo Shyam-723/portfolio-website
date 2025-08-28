@@ -59,6 +59,9 @@ const Header = () => {
             <Link to="/contact" className="text-white hover:text-teal-400 transition-colors">
               Contact
             </Link>
+            <Link to="/resume" className="text-white hover:text-teal-400 transition-colors">
+              Resume
+            </Link>
           </nav>
 
           <button className="md:hidden text-white">

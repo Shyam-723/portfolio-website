@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import ProfessionalPhoto from '../images/Professional_Photo.jpeg';
 import HackathonPhoto from '../images/ExoSky.jpeg'
+import BuildingPhoto from '../images/Building.png'
+
 
 interface ContentBlockProps {
   title: string;
@@ -107,19 +109,19 @@ const AboutSection = () => {
               <>
               I specialize in full-stack development, including but not limited to:
               <ul>
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>Modern CSS Frameworks</li>
-                <li>Figma</li>
-                <li>SupaBase & FireBase</li>
-                <li>Docker</li>
+                <li>- React</li>
+                <li>- TypeScript</li>
+                <li>- Modern CSS Frameworks</li>
+                <li>- Figma</li>
+                <li>- SupaBase & FireBase</li>
+                <li>- Docker</li>
               </ul>
               
               I'm currently branching out to AI/ML in Computer Vision. So far, I've worked with:
               <ul>
-              <li>OpenCV</li>
-              <li>ResNet</li>
-              <li>PyTorch</li>
+              <li>- OpenCV</li>
+              <li>- ResNet</li>
+              <li>- PyTorch</li>
               </ul>
               </>
             }
@@ -130,20 +132,21 @@ const AboutSection = () => {
           />
           
           <ContentBlock 
-            title="Extracirciulars" /* THis is spelt VERY wrong */
+            title="Extra Cirriculars" 
             description={
               <>
                 I like to try new things and meet new people! I:
                 <ul>
-                  <li>Play Basketball</li>
-                  <li>Took part in a competetive dance team</li>
-                  <li>Manage a 20 person team that hosts a 200 person hackathon</li>
-                  <li>Hike</li>
+                  <li>- Play Basketball</li>
+                  <li>- Took part in a competetive dance team</li>
+                  <li>- Manage a 20 person team that hosts a 200 person hackathon</li>
+                  <li>- Hike</li>
+                  <li>- Travel</li>
                 </ul>
               </>
             }
-            imageUrl=""
-            imageBlurb=''
+            imageUrl={BuildingPhoto}
+            imageBlurb="India Gate, New Delhi"
             imageAlt="Extra-Stuff"
           />
         </div>
