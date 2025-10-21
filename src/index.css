@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
   }
   
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  
   body {
     @apply bg-white text-gray-900 overflow-x-hidden;
   }
